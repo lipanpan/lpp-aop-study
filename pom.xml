@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.pandan</groupId>
+        <artifactId>lpp-maven-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <artifactId>lpp-aop-study</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <description>AOP面向切面编程</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <version.spring-context>4.3.9.RELEASE</version.spring-context>
+        <version.spring-core>4.3.9.RELEASE</version.spring-core>
+        <version.spring-beans>4.3.9.RELEASE</version.spring-beans>
+        <version.spring-aop>4.3.9.RELEASE</version.spring-aop>
+        <version.spring-tx>4.3.9.RELEASE</version.spring-tx>
+        <version.aspectjrt>1.8.10</version.aspectjrt>
+        <version.aspectjweaver>1.8.10</version.aspectjweaver>
+        <version.javassist>3.20.0-GA</version.javassist>
+        <version.cglib>3.2.4</version.cglib>
+    </properties>
+
+    <dependencies>
+        <!-- Spring 依赖配置 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${version.spring-context}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${version.spring-core}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${version.spring-beans}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${version.spring-aop}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${version.spring-tx}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${version.aspectjrt}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${version.aspectjweaver}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>${version.javassist}</version>
+        </dependency>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>${version.cglib}</version>
+        </dependency>
+    </dependencies>
+</project>
