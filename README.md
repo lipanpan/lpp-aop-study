@@ -20,5 +20,9 @@ AOP面向切面编程，是对OOP面向对象编程的一种补充，将非核�
    3.1. javassist
    
    3.2. cglib
+   
+4. 参考链接
+
+   4.1. https://www.mkyong.com/spring3/spring-aop-aspectj-annotation-example/
   
 
