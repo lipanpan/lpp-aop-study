@@ -16,9 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.spring-context>4.3.9.RELEASE</version.spring-context>
         <version.spring-core>4.3.9.RELEASE</version.spring-core>
-        <version.spring-beans>4.3.9.RELEASE</version.spring-beans>
         <version.spring-aop>4.3.9.RELEASE</version.spring-aop>
-        <version.spring-tx>4.3.9.RELEASE</version.spring-tx>
         <version.aspectjrt>1.8.10</version.aspectjrt>
         <version.aspectjweaver>1.8.10</version.aspectjweaver>
         <version.javassist>3.20.0-GA</version.javassist>
