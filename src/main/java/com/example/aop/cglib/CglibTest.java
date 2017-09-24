@@ -11,6 +11,12 @@ public class CglibTest {
                 new AccessLogAdvice());
         proxyObj.hello("lipan");
         proxyObj.welcome("lipan");
+
+        HelloWelcomeImpl proxyObjNew = (HelloWelcomeImpl) CglibProxyFactory.getProxy(HelloWelcomeImpl
+                .class, new AccessLogAdviceNew());
+        proxyObjNew.hello("lipan");
+        proxyObjNew.welcome("lipan");
+
     }
 
 }
