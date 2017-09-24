@@ -7,7 +7,7 @@ import net.sf.cglib.proxy.Enhancer;
  * Created by lipan on 2017/9/24.
  * Describe: CGLIB代理工厂
  */
-public class CglibProxyFactory {
+public final class CglibProxyFactory {
 
     /**
      * 创建代理类实例

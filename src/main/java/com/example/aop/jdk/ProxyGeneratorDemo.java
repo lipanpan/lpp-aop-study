@@ -14,6 +14,8 @@ import java.io.IOException;
  * {
  * ......
  * }
+ * 由于java是单继承的，自动生成的代理类需要继承自Proxy，
+ * JDK的动态代理只能针对接口，而无法针对class类进行动态代理的原因
  */
 public class ProxyGeneratorDemo {
 
