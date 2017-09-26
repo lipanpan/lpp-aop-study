@@ -10,16 +10,16 @@ import net.sf.cglib.proxy.Enhancer;
 public final class CglibProxyFactory {
 
     /**
-     * 创建代理类实例
+     * 泛型方法：创建代理类实例
      * @param clazz
      * @param callback
      * @return
      */
-    public static Object getProxy(Class clazz, Callback callback) {
+    public static <T> T getProxy(Class clazz, Callback callback) {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(clazz); //设者要创建子类的类
         enhancer.setCallback(callback); //设置回调的对象
-        return enhancer.create(); //通过字节码技术动态创建子类实例,
+        return (T) enhancer.create(); //通过字节码技术动态创建子类实例,
     }
 
 }

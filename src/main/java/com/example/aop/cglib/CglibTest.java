@@ -7,13 +7,12 @@ package com.example.aop.cglib;
 public class CglibTest {
 
     public static void main(String[] args) {
-        HelloWelcomeImpl proxyObj = (HelloWelcomeImpl) CglibProxyFactory.getProxy(HelloWelcomeImpl.class,
-                new AccessLogAdvice());
+        HelloWelcomeImpl proxyObj = CglibProxyFactory.getProxy(HelloWelcomeImpl.class, new AccessLogAdvice());
         proxyObj.hello("lipan");
         proxyObj.welcome("lipan");
 
-        HelloWelcomeImpl proxyObjNew = (HelloWelcomeImpl) CglibProxyFactory.getProxy(HelloWelcomeImpl
-                .class, new AccessLogAdviceNew());
+        HelloWelcomeImpl proxyObjNew = CglibProxyFactory.getProxy(HelloWelcomeImpl.class, new
+                AccessLogAdviceNew());
         proxyObjNew.hello("lipan");
         proxyObjNew.welcome("lipan");
 
