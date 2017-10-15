@@ -21,6 +21,7 @@
         <version.aspectjweaver>1.8.10</version.aspectjweaver>
         <version.javassist>3.20.0-GA</version.javassist>
         <version.cglib>3.2.4</version.cglib>
+        <version.dubbo>2.8.4</version.dubbo>
     </properties>
 
     <dependencies>
@@ -59,6 +60,11 @@
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>${version.cglib}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${version.dubbo}</version>
         </dependency>
     </dependencies>
 </project>
