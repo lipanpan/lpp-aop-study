@@ -12,4 +12,18 @@ public aspect AccessLogAdviceNew {
         System.out.println("AccessLogAdviceNew：begin invoke method");
     }
 
+    Object around():printAroundLog(){
+        System.out.println("AccessLogAdviceNew：begin invoke method");
+        Object result = proceed();
+        System.out.println("AccessLogAdviceNew：begin invoke method");
+    }
+
+    after()returning:afterReturning(){
+
+    }
+
+    after()throwing:afterThrowing(ExceptionType type){
+        System.out.println();
+    }
+
 }
